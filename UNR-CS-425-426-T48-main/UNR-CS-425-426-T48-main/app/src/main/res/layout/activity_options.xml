@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Options_activity" android:id="@+id/coordinatorLayout" android:background="#FFFFFF">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Color Blind Mode"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="185dp"
+                android:layout_height="58dp" android:id="@+id/colorblindbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="278dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="113dp" android:layout_marginEnd="113dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="My Notes"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="182dp"
+                android:layout_height="57dp" android:id="@+id/myIntructors"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="206dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="114dp" android:layout_marginEnd="115dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="BACK"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/exitbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="35dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="34dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="DEV OPTIONS"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="185dp"
+                android:layout_height="58dp" android:id="@+id/devoptions"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="115dp" android:layout_marginEnd="111dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="354dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Text-To-Speech"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="185dp"
+                android:layout_height="58dp" android:id="@+id/TextToSpeech"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="115dp" android:layout_marginEnd="111dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="426dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Accessibility"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="185dp"
+                android:layout_height="58dp" android:id="@+id/Accessibility"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="115dp" android:layout_marginEnd="111dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="496dp"/>
+        <ImageView
+                android:src="@drawable/unr_wolf_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="2dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="112dp" android:layout_marginEnd="111dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Reset Options"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="186dp"
+                android:layout_height="48dp" android:id="@+id/resetoptionsbutton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="155dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="113dp" android:layout_marginEnd="112dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="OPTIONS"
+                android:layout_width="297dp"
+                android:layout_height="86dp" android:id="@+id/textView2"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center" android:textSize="48sp" android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="94dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="57dp"
+                android:layout_marginEnd="57dp" app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

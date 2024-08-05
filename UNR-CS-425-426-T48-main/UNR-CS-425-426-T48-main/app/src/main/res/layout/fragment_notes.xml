@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             tools:context=".NotesFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ListView
+                android:id="@+id/listViewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/addNoteLayout"
+                android:backgroundTint="#021f4f" android:background="#021f4f"/>
+
+        <LinearLayout
+                android:id="@+id/addNoteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:padding="16dp"
+                android:background="#EFEFF6">
+            <TextView
+                    android:id="@+id/myNotesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="My Notes"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:paddingTop="20dp"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/editTextRoomNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Room Number"
+                    android:inputType="number"/>
+
+            <Spinner
+                    android:id="@+id/spinnerBuildingName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:background="@drawable/button_color"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/backButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:background="@drawable/button_color"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/addButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

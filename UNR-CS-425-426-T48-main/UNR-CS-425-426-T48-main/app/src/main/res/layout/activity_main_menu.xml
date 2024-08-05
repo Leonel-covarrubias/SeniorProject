@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainMenu" android:id="@+id/coordinatorLayout" android:background="#FFFFFF">
+
+
+    <ImageView
+            android:layout_width="446dp"
+            android:layout_height="388dp" app:srcCompat="@drawable/brand_logophoto_1"
+            android:id="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="AR Scanner "
+            android:layout_width="200dp"
+            android:layout_height="60dp" android:id="@+id/ARbutton"
+            android:background="@drawable/button_color"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="101dp" android:layout_marginEnd="101dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="Search"
+            android:layout_width="200dp"
+            android:layout_height="60dp" android:id="@+id/mainSearch"
+            android:background="@drawable/button_color"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="275dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="133dp" android:layout_marginEnd="132dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="Options"
+            android:layout_width="150dp"
+            android:layout_height="55dp" android:id="@+id/mainOptions"
+            android:background="@drawable/button_color"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="31dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="132dp" android:layout_marginEnd="132dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="UNR Website"
+            android:layout_width="150dp"
+            android:layout_height="55dp" android:id="@+id/WebsiteButton"
+            android:background="@drawable/button_color"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="100dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="132dp" android:layout_marginEnd="132dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="415dp"
+            android:layout_height="179dp" app:srcCompat="@drawable/ar_u_banner" android:id="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

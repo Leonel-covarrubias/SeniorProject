@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MoreInfo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/banner"
+            android:layout_width="423dp"
+            android:layout_height="128dp"
+            android:background="@android:color/darker_gray"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+                android:id="@+id/building_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Anasari Building"
+                android:textColor="#021f4f"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="84dp"
+        />
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="BACK"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/backButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Main Menu"
+                android:background="@drawable/button_color"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainMenuButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/UI"
+            android:layout_width="418dp"
+            android:layout_height="751dp"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+                android:id="@+id/building_code_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Building Code:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/building_code_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="AB"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/building_code_title"/>
+
+        <TextView
+                android:id="@+id/building_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Number:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/building_code_title"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/building_number_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="63"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/building_number_title"
+                app:layout_constraintStart_toEndOf="@id/building_number_title"/>
+
+        <TextView
+                android:id="@+id/hours_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/building_number_textView"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/hours_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="M-F: 7:00AM - 10:00PM"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/hours_title"
+                app:layout_constraintStart_toEndOf="@id/hours_title"/>
+
+        <ImageView
+                android:id="@+id/buildingImage"
+                android:layout_width="161dp"
+                android:layout_height="92dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Building Image"
+                app:srcCompat="@drawable/ab"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/resources_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resources:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/hours_textView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"/>
+
+        <ListView
+                android:id="@+id/resources_listView"
+                android:layout_width="387dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/resources_title"
+                app:layout_constraintTop_toBottomOf="@id/resources_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/resources_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="College of Business Advising Center: Room 409"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resources_title"
+                app:layout_constraintStart_toStartOf="@id/resources_title"/>
+
+        <TextView
+                android:id="@+id/restrooms_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restrooms:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/resources_listView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"/>
+
+        <ListView
+                android:id="@+id/restrooms_listView"
+                android:layout_width="387dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/restrooms_title"
+                app:layout_constraintTop_toBottomOf="@id/restrooms_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/restrooms_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="First Floor - Southwest Corner"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/restrooms_title"
+                app:layout_constraintStart_toStartOf="@id/restrooms_title"/>
+
+        <TextView
+                android:id="@+id/elevators_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elevators:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/restrooms_listView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"/>
+
+        <ListView
+                android:id="@+id/elevators_listView"
+                android:layout_width="387dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/elevators_title"
+                app:layout_constraintTop_toBottomOf="@id/elevators_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/elevators_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="First Floor - Center of Building"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/elevators_title"
+                app:layout_constraintStart_toStartOf="@id/elevators_title"/>
+
+        <TextView
+                android:id="@+id/staircases_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staircases:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/elevators_textView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+        />
+
+        <ListView
+                android:id="@+id/staircases_listView"
+                android:layout_width="387dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/staircases_title"
+                app:layout_constraintTop_toBottomOf="@id/staircases_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/staircases_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="East and West Staircases: First-Fifth Floor, Main Staircase: First-Second Floor"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/staircases_title"
+                app:layout_constraintStart_toStartOf="@id/staircases_title"/>
+
+        <TextView
+                android:id="@+id/amenities_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amenities:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/staircases_textView"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:id="@+id/amenities_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Food Options, Study Rooms, Computer Labs"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amenities_title"
+                app:layout_constraintStart_toStartOf="@id/amenities_title"/>
+
+        <ListView
+                android:id="@+id/amenities_listView"
+                android:layout_width="387dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/amenities_title"
+                app:layout_constraintTop_toBottomOf="@id/amenities_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+        <TextView
+                android:id="@+id/dining_options_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dining Options:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/amenities_textView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"/>
+
+        <TextView
+                android:id="@+id/dining_options_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Food Options, Study Rooms, Computer Labs"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dining_options_title"
+                app:layout_constraintStart_toStartOf="@id/dining_options_title"/>
+
+        <ListView
+                android:id="@+id/dining_options_listView"
+                android:layout_width="387dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/dining_options_title"
+                app:layout_constraintTop_toBottomOf="@id/dining_options_title"
+                app:layout_constraintHorizontal_bias="0.0" android:visibility="invisible"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
